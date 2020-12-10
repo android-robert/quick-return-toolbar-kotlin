@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.robert.quickreturntoolbar.ObservableScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/placeholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize" />
+
+                <View style="@style/Item.Top" />
+
+                <View style="@style/Item.Bottom" />
+
+                <View style="@style/Item.Bottom.Alt" />
+
+                <View style="@style/Item.Bottom" />
+
+                <View style="@style/Item.Bottom.Alt" />
+
+                <View style="@style/Item.Bottom" />
+
+                <View style="@style/Item.Bottom.Alt" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/my_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways|snap"
+                app:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+        </FrameLayout>
+
+    </com.robert.quickreturntoolbar.ObservableScrollView>
+
+</LinearLayout>
